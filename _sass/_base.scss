@@ -1342,3 +1342,25 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+/* Override the Bootstrap pr-2 class */
+.my-custom-pr {
+  padding-right: 5rem !important;  /* Modify this to your desired padding value */
+  white-space: nowrap;
+}
+
+/* Dark Theme Styles */
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+      color: #2698ba;
+  }
+}
+
+[data-theme="light"] h1, 
+[data-theme="light"] h2, 
+[data-theme="light"] h3, 
+[data-theme="light"] h4, 
+[data-theme="light"] h5, 
+[data-theme="light"] h6 {
+    color: black;
+}
